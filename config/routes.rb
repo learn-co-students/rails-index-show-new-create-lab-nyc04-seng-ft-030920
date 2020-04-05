@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  get '/', to: 'coupons#index'
+  get "/", to: 'coupons#index', as: "coupons"
+  get "/coupon/:id", to: 'coupons#show', as: "coupon"
+  get "/new", to: 'coupons#new', as: "new_coupon"
+  post "/", to: 'coupons#create'
 end
 
   # The priority is based upon order of creation: first created -> highest priority.
