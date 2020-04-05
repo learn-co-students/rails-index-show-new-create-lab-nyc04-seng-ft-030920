@@ -1,0 +1,9 @@
+<h1>All Coupons</h1>
+
+<% @coupons.each do |coupon| %>
+    <ul>
+    <li>
+        <%="Coupon: #{coupon.coupon_code} at #{coupon.store}" %>
+    </li>
+    </ul>
+<% end %>
